@@ -1,0 +1,28 @@
+Alphabet:
+
+- Upper (A-Z) and lower case letters (a-z) of the English alphabet
+- Decimal digits (0-9)
+
+Lexic:
+- Special symbols, representing:
+	- operators: + - * / < <= = > >= == !=
+	- separators: { } ( ) . , space
+	- reserved words: string int if else while read print
+
+- Identifiers:
+	- a sequence of letters and digits, such that the first character is a letter
+	- rule:
+		IDENTIFIER = LETTER { LETTER | DIGIT }
+		LETTER = "a" | "b" | ... | "z" | "A" | "B" | ... | "Z"
+		DIGIT = "0" | "1" | ... | "9"
+
+- Constants:
+	- integer
+		INTEGER = "0" | [SIGN] NON_ZERO_DIGIT { DIGIT }
+		NON_ZERO_DIGIT = "1" | "2" | ... | "9"
+		DIGIT =  "0" | "1" | ... | "9"
+		SIGN = "+" | "-"
+	- string
+		STRING = """ { DIGIT | LETTER } """
+		DIGIT =  "0" | "1" | ... | "9"
+		LETTER = "a" | "b" | ... | "z" | "A" | "B" | ... | "Z"
