@@ -18,7 +18,7 @@ Lexic:
 
 - Constants:
 	- integer
-		INTEGER = "0" | [SIGN] NON_ZERO_DIGIT { DIGIT }
+		INTEGER = "0" | [ SIGN ] NON_ZERO_DIGIT { DIGIT }
 		NON_ZERO_DIGIT = "1" | "2" | ... | "9"
 		DIGIT =  "0" | "1" | ... | "9"
 		SIGN = "+" | "-"
