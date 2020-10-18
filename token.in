@@ -22,5 +22,5 @@ else
 while
 read
 print
-1
-0
+1 identifier
+0 constant

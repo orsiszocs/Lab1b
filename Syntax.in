@@ -22,9 +22,10 @@ WHILE_BLOCK = "while" CONDITION "{" { SIMPLE_STATEMENT } "}"
 IDENTIFIER = LETTER { LETTER | DIGIT }
 LETTER = "a" | "b" | ... | "z" | "A" | "B" | ... | "Z"
 DIGIT = "0" | "1" | ... | "9"
+SPECIAL_CHAR = "." | "!" | "," | "!" | "?" | ";"
 CONSTANT = INTEGER | STRING
 
 INTEGER = "0" | [ SIGN ] NON_ZERO_DIGIT { DIGIT }
 NON_ZERO_DIGIT = "1" | "2" | ... | "9"
 SIGN = "+" | "-"
-STRING = """ { DIGIT | LETTER } """
+STRING = """ [{ DIGIT | LETTER | SPECIAL_CHAR }] """
